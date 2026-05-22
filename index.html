@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(getcomputerChoice())
+        function getcomputerChoice(){
+            let num =Math.floor( Math.random()*3);
+            let choice = ['rock','paper','scissor'];
+            return choice[num];
+        }
+
+        function playRound (human , computer ) {
+            human=human.toLowerCase()
+            if (human==computer){
+                console.log("tie!!")
+            }
+            else if ( human=='rock') {
+                if (computer=='paper') {
+                    console.log("You lose! paper beats rock")
+                    c++;
+                }
+
+                if (computer=='scissor') {
+                    console.log("You win! rock beats scissor")
+                    h++;
+                }
+            }
+            else if ( human=='paper') {
+                if (computer=='rock') {
+                    console.log("You win! paper beats rock")
+                    c++;
+                }
+
+                if (computer=='scissor') {
+                    console.log("You lose! scissor beats paper")
+                    c++;
+                }
+            }
+            else if ( human=='scissor') {
+                if (computer=='rock') {
+                    console.log("You lose! rock beats scissor")
+                    c++;
+                }
+
+                if (computer=='paper') {
+                    console.log("You win! scissor beats paper")
+                    h++
+                }
+            }
+
+            console.log(`your score: ${h}\ncomputer score: ${c}`)
+        }
+        
+        function playGame(){
+        let choice = prompt('Eneter your choice')
+        let c_choice = getcomputerChoice();
+        console.log(`my choice : ${choice}\ncomputer choice: ${c_choice}`)
+        playRound(choice,c_choice);
+        }
+        
+        
+        let h=0,c=0;
+
+        playGame();
+        playGame();
+        playGame();
+        playGame();
+        playGame();
+
+        console.log(`final scores:\nyour score:${h}\ncomputer score:${c}`)
+
+        console.log(`${(c>h)?"Computer":"You"} won!`)
+        
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
