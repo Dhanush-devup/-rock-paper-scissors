@@ -1,0 +1,104 @@
+body {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+*{
+    border-radius: 10px;
+    font-weight: bold;
+}
+div{
+    border:2px solid #181c23;
+    padding: 10px;
+    margin:10px;
+}
+
+.score_board{
+    display: flex;
+}
+.score_board div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#current_choice {
+    display: flex;
+    flex-direction: row;
+    border :0px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-self: center;
+    width: 100%;
+    max-width: 460px; /* Or whatever width matches your design */
+    margin: 0 auto;
+    border : none;
+}
+
+.outer div {
+    display: flex;
+    flex : 1 1 0;
+}
+
+button {
+    padding :10px;
+    size: 30px;
+    background-color:#505e76;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body { 
+    /* background-color: #0B0F17; Deep Charcoal Black */
+    background-color: #1f2937;
+}
+
+.outer { 
+    background-color:#374151; /* Sleek Dark Metallic Gray */
+    /* border-color: #F8FAFC;      Crisp white borders to frame the game */
+    color: #F8FAFC;            /* White text */
+}
+
